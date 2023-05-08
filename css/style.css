@@ -16,7 +16,6 @@ img {
 ul {
     padding-left: 0;
     margin-top: 18px;
-
 }
 
 
@@ -42,9 +41,10 @@ h4 {
 
 
 h2 {
-    /* margin: -10% 0; */
+    margin: 15% 0;
     font-size: 14px;
-    padding: 16%;
+    padding: 0px 0;
+    
 }
 
 
@@ -66,8 +66,10 @@ h3 {
 .title {
     font-size: 24px;
     font-weight: 700;
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
+    
 
 
 #top {
@@ -89,7 +91,7 @@ a:hover {
 
 .bio {
     margin-top: 12px;
-    padding: 4%;
+    padding: 5% 6%;
     font-weight: 300;
 }
 
@@ -105,6 +107,7 @@ a:hover {
 }
 
 
+
 .portfolio-container {
 
     margin-bottom: 15%;
@@ -112,13 +115,15 @@ a:hover {
 }
 
 .project {
-    margin-bottom: 20px;
+    height: auto;
+    
+
 }
 
 
 .project p {
-    /* padding: 14px 5% 18px 5%; */
-    padding: 17px;
+    padding: 15px 5%;
+    margin-bottom: 30px;
     font-weight: 300;
     color: #000;
 }
@@ -135,7 +140,7 @@ a:hover {
 
 
 .contact-text {
-    padding: 0 5%;
+    padding: 0px 6%;
     margin: 5% 0;
 }
 
@@ -174,7 +179,7 @@ footer {
     display: flex;
     border-top: 1px solid lightgrey;
     margin: 0% 15px;
-    padding-bottom: 8%;
+    padding-bottom: 10%;
     padding-top: 15px;
     justify-content: space-between;
     align-items: center;
@@ -200,13 +205,14 @@ footer {
 
 
     .title {
-        padding-top: 25px;
+        padding-top: 5%;
     }
 
 
     ul {
         display: flex;
         justify-content: center;
+        margin-top: 10px;
     }
 
 
@@ -219,58 +225,63 @@ footer {
     .section-2 {
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 0px;
+        padding-bottom: 4%;
         align-items: center;
-        margin-top: 10px;
-        padding-bottom: 5%;
+        height: 250px;
     }
 
 
     .bio {
         text-align: left;
-        padding: 0 25px;
+        padding: 0px 25px;
+        margin-top: 0px;
     }
 
 
     .profile-pic {
         width: 41%;
         padding-top: 0;
-        padding-right: 25px;
-        margin-top: 6%;
+        padding-right: 28px;
     }
 
 
     h2 {
-        padding: 0;
-        margin: 50px 0;
+        margin: 0 22px;
+        padding: 5% 0;
     }
 
 
     h3 {
-        margin: 5px 0
+        margin: 5px 0;
     }
 
     .portfolio-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-
+        justify-content: space-between;
+        margin: 0 22px;
+        padding-bottom: 10px;
     }
 
+    
+
     .project {
-        flex-basis: 50%;
-        margin: 0 -5%;
+        flex-basis: 40%;
+        margin: 0 7px;
+        flex-grow: 1;
     }
 
     .project p {
         font-size: 15px;
         margin-bottom: 12%;
-        padding: 10px 14%;
+        padding: 10px 35px;
     }
 
 
     .main-img {
         padding-bottom: 15px;
-        width: 100%;
+        max-width: 100%;
     }
 
     h4 {
@@ -279,7 +290,7 @@ footer {
     }
 
     .contact-container {
-        margin-bottom: 7%;
+        margin-bottom: 8%;
     }
 
     p.contact-text {
@@ -306,44 +317,83 @@ footer {
         font-size: 12px;
         padding: 0px 10px;
     }
-  
+
 }
 
 
 @media screen and (min-width: 1024px) {
 
+    body {
+        background-color: #fbfbfa;
+    }
+
+
+    .header {
+        padding-bottom: 10px;
+        
+    }
+
 
     .section-1 {
         display: flex;
-        padding: 20px 5%;
+        padding: 15px 5%;
         justify-content: space-between;
+        align-items: center;
     }
+
 
     .section-2 {
-
         display: flex;
         align-items: flex-start;
+        margin-top: 0;
     }
+
 
     .profile-pic {
         margin-top: 15px;
         margin-right: 40px;
     }
 
+
     .bio {
         padding-right: 4%;
         padding-left: 5%;
+        padding-top: 12px;
     }
+
 
     .portfolio-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       padding: 0 15px;
+       
     }
+    
 
     .project {
-        flex-basis: 40%;
-        padding: 0 30px;
+        flex-basis: 30%;
     }
+        
+
+    .project p {
+        padding: 0 19px;
+    }
+
+
+    .portfolio-container,
+    .project,
+    h2 {
+        background-color: #fff;
+    }
+
+    .contact-container a {
+        font-weight: 800;
+    }
+
+    footer {
+        padding: 25px 0;
+        margin: 0 5%;
+    }
+
 }
