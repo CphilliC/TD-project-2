@@ -55,7 +55,7 @@ h3 {
 }
 
 
-.header {
+.head {
     background: #fbfbfa;
     padding-top: 5px;
     padding-bottom: 24px;
@@ -328,9 +328,8 @@ footer {
     }
 
 
-    .header {
-        padding-bottom: 10px;
-        
+    .head {
+        padding-bottom: 40px;
     }
 
 
